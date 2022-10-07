@@ -1,0 +1,131 @@
+body{
+  background-color:white;
+}
+
+
+.spoiler-text {
+  background: black;
+  color: transparent;
+  cursor: help;
+  user-select: none;
+  transition: background 0.3s ease 0.2s, color 0.2s ease 0.25s;
+}
+
+.spoiler-text:hover,
+.spoiler-text:focus {
+  background: #e8e8e8;
+  color: inherit;
+}
+
+
+h2 {
+  font-size:40px;
+}
+
+h1 {
+  font-size:145px;
+  text-shadow: 5px 5px 3px black;
+}
+
+h3 {
+
+}
+
+h4 {
+  font-size:20px;
+}
+.isop {
+  font-size: 35px;
+  padding: 10px;
+}
+
+header {
+  background-color:lightblue;
+  padding: 30px;
+  text-align: center;
+  font-size: 30px;
+  color: black;
+}
+
+
+main {
+  background-color:white;
+  
+}
+
+figure {
+  background-color:lightblue;
+  padding: 20px;
+  margin: 
+}
+
+figure img {
+  background-color:transparent;
+  width:15%;
+  height:15%;
+}
+
+
+
+
+ol {
+  padding: 15px;
+  background-color:lightblue;
+  padding-left:30px;
+  font-size: 20px;
+}
+
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+
+
+nav {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background:#66ccff;
+  padding: 15px;
+}
+
+nav ol {
+  list-style-type: none;
+  padding: 0;
+}
+
+
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color:#99ddff;
+  padding: 10px;
+  padding-left:30px;
+}
+
+footer {
+  padding: 25px;
+  background-color:lightblue;
+  font-size: 20px;
+}
+
+
+a {
+  font-size: 22px;
+}
+/* unvisited link */
+a:link {
+  color: darkblue;
+}
+
+/* visited link */
+a:visited {
+  color: purple;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+

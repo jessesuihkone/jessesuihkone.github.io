@@ -1,0 +1,307 @@
+
+
+
+
+
+/* Vaihtuva taustaväri */
+
+@keyframes bgcolor {
+    0% {
+        background-color: #45a3e5
+}
+    30% {
+        background-color: #66bf39
+}
+    60% {
+        background-color: #eb670f
+}
+    90% {
+        background-color: #f35
+}
+    100% {
+        background-color: #864cbf
+}
+}
+
+body {
+ -webkit-animation: bgcolor 30s infinite;
+ animation: bgcolor 15s infinite;
+ -webkit-animation-direction: alternate;
+ animation-direction: alternate;
+}
+
+
+
+
+
+/* Tekstit */
+
+h1 {
+ color:yellow;
+ background-color:gray;
+ text-align:center;
+ border:3px solid black;
+ padding:10px;
+}
+p {
+ box-sizing: content-box;  
+  width: 380px;
+  height: 50px;
+ color:yellow;
+ text-align:center;
+ background-color:gray;
+ border:3px solid black;
+ padding:20px;
+ font-family: verdana;
+ font-size: 150%;
+}
+h2 {
+ color:yellow;
+ background-color:gray;
+ text-align:center;
+ border:3px solid black;
+ padding:3px;
+}
+h3 {
+ width:15%;
+ padding:5px;
+ color:yellow;
+ background-color:gray;
+ text-align:left;
+ border:2px solid black;
+}
+
+
+
+
+
+/* Listat */
+
+ul {
+ padding-top:10px;
+ padding-bottom:10px;
+ width:200px;
+ background-color:rgb(160,160,160);
+ border: 2px solid black;
+ color: black;
+}
+ol {
+ padding-top:10px;
+ padding-bottom:10px;
+ width:200px;
+ background-color:rgb(160,160,160);
+ border: 2px solid black;
+ color: black;
+}
+
+
+
+
+
+/* Linkit */
+
+a:link {
+  color: black;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: blue;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+
+
+
+
+/* Flipbox */
+
+.flip-box {
+  margin: 10px auto 20px;
+    display: block;
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 3px solid black;
+  perspective: 1000px;
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 1.0s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+ transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-box-front {
+  background-color:transparent;
+  color: black;
+}
+
+.flip-box-back {
+  border:3px solid black;
+  background-color: gray;
+  color: gray;
+  transform: rotateY(180deg);
+}
+
+
+
+
+
+/* Taulukot */
+
+table {
+ border-collapse: collapse;
+}
+
+
+th {
+ padding: 12px;
+ text-align: left;
+ background-color: gray;
+ color: yellow;
+}
+
+td, th {
+ border: 2px solid black;
+ padding: 8px;
+}
+
+th:hover {
+background-color: coral;
+}
+
+td:hover {
+background-color: lightblue;
+}
+
+
+
+
+
+/* Ylä navigointipalkki */
+
+.navbar { 
+  overflow: hidden;
+  background-color: gray;
+  border: 2px solid black;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: yellow;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size:120%;
+  font-family: Georgia, serif;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: lightgray;
+}
+
+
+
+
+
+/* Dropdown valintapalkki */
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: yellow;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  font-size:120%;
+  font-family: Georgia, serif;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: gray;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border:2px solid black;
+}
+
+.dropdown-content a {
+  float: none;
+  color: yellow;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: lightgray;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+
+
+
+/* Hehkuva teksti */
+
+.glow {
+  font-size: 60px;
+  color: #fff;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+

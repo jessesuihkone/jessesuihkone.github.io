@@ -1,0 +1,77 @@
+
+
+
+
+/* Ylä navigointipalkki */
+
+.navbar { 
+  overflow: hidden;
+  background-color: gray;
+  border: 2px solid black;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: yellow;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size:120%;
+  font-family: Georgia, serif;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: lightgray;
+}
+
+
+
+
+
+/* Dropdown valintapalkki */
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: yellow;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  font-size:120%;
+  font-family: Georgia, serif;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: gray;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border:2px solid black;
+}
+
+.dropdown-content a {
+  float: none;
+  color: yellow;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: lightgray;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
