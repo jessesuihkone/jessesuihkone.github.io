@@ -1,7 +1,5 @@
 body {
   background-color:lightgray;
-  
-  
 }
 
 * {
@@ -9,9 +7,9 @@ body {
 }
 
 .centerimg {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  display:block;
+  margin-left: 65%;
+  margin-right: 35%;
   border-radius:50%;
 }
 
@@ -33,6 +31,7 @@ h2 {
   text-align:left;
   padding-left:2%; 
 }
+
 
 .row:after {
   
@@ -56,16 +55,29 @@ h2 {
 }
 
 
+.div2 {
+border:2px solid #9f9f9f;
+width: 50%;
+background-color:lightgray;
+}
+
+.text2 {
+font-size:120%;
+font-family:verdana;	
+}
+
+
 .div3 {
-  
- 
   text-align:left;
   width:50%;
   background-color:lightgray;  
   float:right;
-  border:2px solid black;
+  border:2px solid #9f9f9f;
   font-size:100%;
 }
+
+
+
 
 @media screen and (max-width: 800px) {
   .div3, .div1 {   
@@ -83,5 +95,5 @@ h2 {
     margin-left:5%;
     margin-right:5%;
     float:none;
-}
+  }
 }

@@ -25,8 +25,7 @@ width:90%;
 border:4px solid black;	
 text-align:center;
 font-size:150%;
-margin-left:5%;
-margin-right:5%;
+margin:0 auto;
 box-sizing:border-box;
 }
 
@@ -61,13 +60,14 @@ box-sizing:border-box;
 }
 
 .box4 {
-margin-left:25%;
-margin-right:25%;
+margin:0 auto;
 padding:10%;
 width:50%;
 border:2px solid black;	
 box-sizing:border-box;
 background-color:transparent;
+margin-bottom:10px;
+margin-top:10px;
 }
 
 .testbox {
@@ -103,3 +103,13 @@ color:white;
 background-color:#FA8072;
 margin:-120px 0 0 -50px;	
 }
+
+.testbox3 {
+	
+}
+
+.testbox3text {
+	
+}
+
+@import url(
